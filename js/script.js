@@ -67,7 +67,7 @@ $(document).ready(function() {
       $(".chart").easyPieChart({
         easing: "easeInOut",
         barColor: "#fff",
-        trackColor: "#c0392b",
+        trackColor: "#487eb0",
         traceColor: false,
         scaleColor: false,
         lineWidth: 4,
