@@ -43,11 +43,11 @@ $(document).ready(function() {
   var skillsTopOffset = $(".skillsSection").offset().top;
 
   $(window).scroll(function() {
-    if (window.pageYOffset > nameTopOffset - $(window).height() + 100) {
+    if (window.pageYOffset > nameTopOffset - $(window).height() + 420) {
       if (setName === 0) {
         var typed2 = new Typed("#myName", {
           strings: ["Amirul Ikmal"],
-          typeSpeed: 80
+          typeSpeed: 200
         });
         setName = 1;
       }
