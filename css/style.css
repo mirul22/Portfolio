@@ -1,3 +1,12 @@
+/* Default CSS */
+body {
+  font-size: 14px;
+  color: #333;
+  background-color: #fff;
+  letter-spacing: 1px;
+}
+/* ----------------------------------------------- */
+
 /* Superslides CSS */
 .overlay {
   width: 100%;
@@ -57,12 +66,50 @@
 
 /* ----------------------------------------------- */
 
-/* Superslides CSS */
+/* About CSS */
 .section {
   padding: 100px 0;
 }
 
 .aboutImg {
   max-width: 100%;
+}
+/* ----------------------------------------------- */
+
+/* Skills CSS */
+.skillsSection {
+  background-color: #c0392b;
+  color: #fff;
+}
+
+.skill {
+  text-align: center;
+  margin-left: 10px;
+}
+
+.chart {
+  position: relative;
+  width: 152px;
+  height: 152px;
+  display: inline-block;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.chart canvas {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.chart .percent {
+  color: #000;
+  line-height: 152px;
+  display: inline-block;
+  font-size: 35px;
+}
+
+.chart .percent:after {
+  content: "%";
 }
 /* ----------------------------------------------- */

@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>My Portfolio</title>
     <link rel="stylesheet" type="text/css" href="css/superslides.css" />
+    <link rel="stylesheet" type="text/css" href="css/owl.carousel.min.css" />
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
     <link rel="stylesheet" type="text/css" href="css/style.css" />
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
@@ -44,7 +45,7 @@
             <img class="aboutImg" src="img/about.jpg" alt="about" />
           </div>
           <div class="col-md-7">
-            <h4>My name is Amirul Ikmal</h4>
+            <h4>My name is <span id="myName"></span></h4>
             <p>
               Hi there! I'm Amirul from Shah Alam, Malaysia. I am currently
               working as a Software Engineer at Dharihaz Technologies Sdn bhd,
@@ -66,9 +67,137 @@
     </div>
     <!-- End About -->
 
+    <!-- Skills -->
+    <div id="skills" class="skillsSection section">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 text-center">
+            <h2>TECHNICAL SKILLS</h2>
+            <P>A representation of my proficiency in each skill</P>
+          </div>
+          <div class="owl-carousel owl-theme">
+            <div class="skill">
+              <span class="chart" data-percent="90">
+                <span class="percent">90</span>
+                <canvas height="152" width="152"></canvas>
+              </span>
+              <h4>HTML5</h4>
+              <p>Used in most of my web based projects</p>
+            </div>
+
+            <div class="skill">
+              <span class="chart" data-percent="75">
+                <span class="percent">75</span>
+                <canvas height="152" width="152"></canvas>
+              </span>
+              <h4>PHP</h4>
+              <p>
+                Work alot with CakePHP in my current company, I also use
+                CodeIgniter
+              </p>
+            </div>
+
+            <div class="skill">
+              <span class="chart" data-percent="70">
+                <span class="percent">70</span>
+                <canvas height="152" width="152"></canvas>
+              </span>
+              <h4>JavaScript</h4>
+              <p>ES6/ES2015, Jquery</p>
+            </div>
+
+            <div class="skill">
+              <span class="chart" data-percent="90">
+                <span class="percent">90</span>
+                <canvas height="152" width="152"></canvas>
+              </span>
+              <h4>CSS3</h4>
+              <p>Used in most of my web based projects. bootstrap</p>
+            </div>
+
+            <div class="skill">
+              <span class="chart" data-percent="80">
+                <span class="percent">80</span>
+                <canvas height="152" width="152"></canvas>
+              </span>
+              <h4>SQL/MYSQL</h4>
+              <p>
+                2 years experience with Microsoft SQL Server and phpMyAdmin.
+              </p>
+            </div>
+
+            <div class="skill">
+              <span class="chart" data-percent="40">
+                <span class="percent">40</span>
+                <canvas height="152" width="152"></canvas>
+              </span>
+              <h4>NOSQL</h4>
+              <p>
+                Latest involvement on my react project using MongoDB.
+              </p>
+            </div>
+
+            <div class="skill">
+              <span class="chart" data-percent="70">
+                <span class="percent">70</span>
+                <canvas height="152" width="152"></canvas>
+              </span>
+              <h4>C#/ASP.NET</h4>
+              <p>Create a few system at my last company.</p>
+            </div>
+
+            <div class="skill">
+              <span class="chart" data-percent="40">
+                <span class="percent">40</span>
+                <canvas height="152" width="152"></canvas>
+              </span>
+              <h4>React JS</h4>
+              <p>
+                Still new with the library, learning everyday to use it in my
+                future project.
+              </p>
+            </div>
+
+            <div class="skill">
+              <span class="chart" data-percent="40">
+                <span class="percent">40</span>
+                <canvas height="152" width="152"></canvas>
+              </span>
+              <h4>Redux JS</h4>
+              <p>
+                Still new with the library, learning everyday to use it in my
+                future project.
+              </p>
+            </div>
+
+            <div class="skill">
+              <span class="chart" data-percent="65">
+                <span class="percent">65</span>
+                <canvas height="152" width="152"></canvas>
+              </span>
+              <h4>Java</h4>
+              <p>Rarely use but I have no problem with it.</p>
+            </div>
+
+            <div class="skill">
+              <span class="chart" data-percent="55">
+                <span class="percent">55</span>
+                <canvas height="152" width="152"></canvas>
+              </span>
+              <h4>Ionic</h4>
+              <p>Hybrid mobile app development</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Skills -->
+
     <!-- Script -->
     <script src="./js/jquery.superslides.min.js"></script>
     <script src="./js/typed.min.js"></script>
+    <script src="./js/owl.carousel.min.js"></script>
+    <script src="./js/jquery.easypiechart.min.js"></script>
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
       integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
