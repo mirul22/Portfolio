@@ -1,4 +1,13 @@
 $(document).ready(function() {
+  var now = new Date();
+  var start = new Date(now.getFullYear(), 0, 0);
+  var diff = now - start;
+  var oneDay = 1000 * 60 * 60 * 24;
+  var day = Math.floor(diff / oneDay);
+  var birthday = 279 - day;
+
+  document.getElementById("birthday").innerHTML = birthday;
+
   $("#slides").superslides({
     animation: "fade",
     play: 5000,
@@ -17,9 +26,6 @@ $(document).ready(function() {
     startDelay: 1000,
     showCursor: false
   });
-
-  var nameTopOffset = $("#myName").offset().top;
-  var setName = 0;
 
   $(".owl-carousel").owlCarousel({
     loop: true,
@@ -40,10 +46,14 @@ $(document).ready(function() {
     }
   });
 
+  var setName = 0;
+  var countUpFinished = false;
+  var nameTopOffset = $("#myName").offset().top;
   var skillsTopOffset = $(".skillsSection").offset().top;
+  var statsTopOffset = $(".statsSection").offset().top;
 
   $(window).scroll(function() {
-    if (window.pageYOffset > nameTopOffset - $(window).height() + 420) {
+    if (window.pageYOffset > nameTopOffset - $(window).height() + 200) {
       if (setName === 0) {
         var typed2 = new Typed("#myName", {
           strings: ["Amirul Ikmal"],
@@ -68,6 +78,18 @@ $(document).ready(function() {
             .text(Math.round(percent));
         }
       });
+    }
+
+    if (
+      !countUpFinished &&
+      window.pageYOffset > statsTopOffset - $(window).height() + 200
+    ) {
+      $(".counter").each(function() {
+        var element = $(this);
+        var endVal = parseInt(element.text());
+        element.countup(endVal);
+      });
+      countUpFinished = true;
     }
   });
 });
