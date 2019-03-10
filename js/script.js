@@ -46,21 +46,22 @@ $(document).ready(function() {
     }
   });
 
-  var setName = 0;
-  var countUpFinished = false;
+  var countUpNameFinished = false;
+  var countUpStatsFinished = false;
   var nameTopOffset = $("#myName").offset().top;
   var skillsTopOffset = $(".skillsSection").offset().top;
   var statsTopOffset = $(".statsSection").offset().top;
 
   $(window).scroll(function() {
-    if (window.pageYOffset > nameTopOffset - $(window).height() + 200) {
-      if (setName === 0) {
-        var typed2 = new Typed("#myName", {
-          strings: ["Amirul Ikmal"],
-          typeSpeed: 200
-        });
-        setName = 1;
-      }
+    if (
+      !countUpNameFinished &&
+      window.pageYOffset > nameTopOffset - $(window).height() + 200
+    ) {
+      var typed2 = new Typed("#myName", {
+        strings: ["Amirul Ikmal"],
+        typeSpeed: 200
+      });
+      countUpNameFinished = true;
     }
 
     if (window.pageYOffset > skillsTopOffset - $(window).height() + 200) {
@@ -81,7 +82,7 @@ $(document).ready(function() {
     }
 
     if (
-      !countUpFinished &&
+      !countUpStatsFinished &&
       window.pageYOffset > statsTopOffset - $(window).height() + 200
     ) {
       $(".counter").each(function() {
@@ -89,7 +90,7 @@ $(document).ready(function() {
         var endVal = parseInt(element.text());
         element.countup(endVal);
       });
-      countUpFinished = true;
+      countUpStatsFinished = true;
     }
   });
 });
