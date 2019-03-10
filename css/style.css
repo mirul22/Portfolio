@@ -189,7 +189,7 @@ body {
 }
 /* ----------------------------------------------- */
 
-/* Stats CSS */
+/* Portfolio CSS */
 .filter {
   text-align: center;
   width: 100%;
@@ -323,5 +323,18 @@ body {
 
 .items {
   padding: 0;
+}
+/* ----------------------------------------------- */
+
+/* Copyright CSS */
+.copyrightSection {
+  background-color: #111;
+  color: #fff;
+  padding: 20px 5px;
+}
+
+.copyrightSection p {
+  margin: 0;
+  text-align: center;
 }
 /* ----------------------------------------------- */
