@@ -74,6 +74,10 @@ body {
 .aboutImg {
   max-width: 100%;
 }
+
+.section p {
+  text-align: justify;
+}
 /* ----------------------------------------------- */
 
 /* Skills CSS */
