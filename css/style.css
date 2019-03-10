@@ -171,6 +171,7 @@ body {
 }
 
 /* ----------------------------------------------- */
+
 /* Stats CSS */
 .contactBtn {
   color: #fff;
@@ -185,5 +186,25 @@ body {
   text-decoration: none;
   color: #487eb0;
   background-color: #fff;
+}
+/* ----------------------------------------------- */
+
+/* Stats CSS */
+.filter a {
+  color: #ccc;
+  border: 1px solid #ccc;
+  padding: 10px 18px;
+  display: block;
+}
+
+.filter li {
+  display: inline-block;
+  padding: 5px;
+}
+
+.filter .current {
+  background-color: #487eb0;
+  border-color: #487eb0;
+  color: #fff;
 }
 /* ----------------------------------------------- */
