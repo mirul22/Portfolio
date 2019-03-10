@@ -87,6 +87,11 @@ body {
   color: #fff;
 }
 
+.skillsSection p {
+  text-align: center;
+  margin-bottom: 35px;
+}
+
 .skill {
   text-align: center;
   margin-left: 10px;
@@ -176,7 +181,7 @@ body {
 
 /* ----------------------------------------------- */
 
-/* Stats CSS */
+/* Contact CSS */
 .contactBtn {
   color: #fff;
   padding: 15px 20px;
@@ -190,6 +195,10 @@ body {
   text-decoration: none;
   color: #487eb0;
   background-color: #fff;
+}
+
+.contactSection p {
+  text-align: center;
 }
 /* ----------------------------------------------- */
 
@@ -341,4 +350,37 @@ body {
   margin: 0;
   text-align: center;
 }
+/* ----------------------------------------------- */
+
+/* Navigation CSS */
+#navigation {
+  background-color: #487eb0;
+  padding: 10px 10px;
+  z-index: 100;
+  width: 100%;
+}
+
+#navigation li {
+  padding: 0 10px;
+}
+
+#navigation li a {
+  color: #fff;
+}
+
+.navbar-brand,
+.navbar-brand:hover {
+  color: #fff;
+}
+
+.navbar-toggler-icon {
+  background: url("../img/icons/menu.png");
+  background-size: 100%;
+}
+
+.fixedNav #navigation {
+  position: fixed;
+  top: 0;
+}
+
 /* ----------------------------------------------- */
