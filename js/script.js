@@ -12,6 +12,14 @@ $(window).on("load", function() {
   });
 });
 
+function openResume() {
+  var myWindow = window.open(
+    "https://www.slideshare.net/slideshow/embed_code/key/8tgBrZfDINqxS8",
+    "",
+    "width=600,height=600"
+  );
+}
+
 $(document).ready(function() {
   $("#slides").superslides({
     animation: "fade",

@@ -78,6 +78,25 @@ body {
 .section p {
   text-align: justify;
 }
+
+.borderBtn {
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  text-decoration: none;
+  color: #fff;
+  padding: 12px 50px;
+  display: inline-block;
+  border-radius: 3px;
+  background-color: #487eb0;
+}
+
+.borderBtn:hover {
+  text-decoration: none;
+  color: #487eb0;
+  background-color: #fff;
+  border: 1px solid #487eb0;
+}
 /* ----------------------------------------------- */
 
 /* Skills CSS */
@@ -199,6 +218,22 @@ body {
 
 .contactSection p {
   text-align: center;
+}
+
+.miscBtn {
+  font-size: 24px;
+  color: #fff;
+  padding: 0px 5px;
+  display: inline-block;
+  margin-top: 20px;
+  border: 1px solid #fff;
+  border-radius: 2px;
+}
+
+.miscBtn:hover {
+  text-decoration: none;
+  color: #487eb0;
+  background-color: #fff;
 }
 /* ----------------------------------------------- */
 
