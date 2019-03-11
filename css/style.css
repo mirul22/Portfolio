@@ -220,7 +220,7 @@ body {
   text-align: center;
 }
 
-.miscBtn {
+.socialBtn {
   font-size: 24px;
   color: #fff;
   padding: 0px 5px;
@@ -230,7 +230,7 @@ body {
   border-radius: 2px;
 }
 
-.miscBtn:hover {
+.socialBtn:hover {
   text-decoration: none;
   color: #487eb0;
   background-color: #fff;
